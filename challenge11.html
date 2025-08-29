@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> grid question</title>
+    <style>
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  column-gap: 20px;
+}
+.profile {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 180px;
+}
+.profile-name {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.mutual-friends-row {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+  margin-top: -20px;
+
+}
+.mutual-friends {
+  border-radius: 100%;
+  width:30px;
+  object-fit: cover;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.mutuals {
+  display: inline-block;
+  color: grey;
+  
+}
+.add-friend {
+  width: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: rgb(248, 248, 248);
+  background-color: rgb(78, 78, 242);
+  border-radius: 5px;
+  cursor: pointer;
+}
+   
+    </style>
+
+  </head>
+  <body>
+
+    <div class="grid">
+
+    
+    <div class="profile">
+
+      <img class="profile-pic" src="/thumbnails/cat.jpg">
+   
+    
+      <p class="profile-name">
+        Oliver
+      </p>
+      <div class="mutual-friends-row">
+        <img class="mutual-friends" src="/thumbnails/dog2.jpg">
+      <p class="mutuals">
+        2 mutual friends
+      </p>
+
+      <button class="add-friend">
+       Add Friend
+      </button>
+       </div>
+    </div>
+
+
+
+    <div class="profile">
+
+      <img class="profile-pic" src="/thumbnails/cat2.jpg">
+   
+    
+      <p class="profile-name">
+        Mimi
+      </p>
+      <div class="mutual-friends-row">
+        <img class="mutual-friends" src="/thumbnails/dog2.jpg">
+      <p class="mutuals">
+        3 mutual friends
+      </p>
+
+      <button class="add-friend">
+       Add Friend
+      </button>
+       </div>
+    </div>
+
+
+    <div class="profile">
+
+      <img class="profile-pic" src="/thumbnails/dog.jpg">
+   
+    
+      <p class="profile-name">
+        Rex
+      </p>
+      <div class="mutual-friends-row">
+        <img class="mutual-friends" src="/thumbnails/dog2.jpg">
+      <p class="mutuals">
+        4 mutual friends
+      </p>
+
+      <button class="add-friend">
+       Add Friend
+      </button>
+       </div>
+    </div>
+  </div>
+
+ 
+
+  </body>
+</html>
